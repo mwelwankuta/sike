@@ -23,8 +23,6 @@ import utils.interceptCurrentClipboardItem
 import java.awt.SystemColor.text
 import java.awt.Toolkit
 
-val toolkit: Toolkit = Toolkit.getDefaultToolkit();
-
 @Composable
 @Preview
 fun App() {
@@ -56,7 +54,7 @@ fun main() = application {
         state = WindowState(
             placement = WindowPlacement.Floating,
             position = WindowPosition(screenSize.height.dp, screenSize.height.dp),
-            width = toolkit.screenSize.width.dp
+            width = screenSize.width.dp
         ),
     ) {
         App()
